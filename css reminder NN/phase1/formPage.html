@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form page</title>
+  </head>
+  <body>
+    <form>
+      <label for="username">Enter username</label>
+      <input type="text" id="username" name="username" />
+      <br /><br />
+      <label for="email">Enter your email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email"
+        required
+      />
+      <br /><br />
+      <label for="password">Enter your password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
+      <p>Choose your poison</p>
+      <input type="radio" name="choice" id="coffe" value="coffe" />
+      <label for="coffe">Coffe</label>
+      <input type="radio" name="choice" id="tea" value="tea" />
+      <label for="tea">Tea</label>
+      <input type="radio" name="choice" id="rum" value="rum" />
+      <label for="run">Rum</label>
+      <br /><br />
+      <label for="q">Security question</label>
+      <select name="q" id="q">
+        <option value="q1">Are?</option>
+        <option value="q2">You?</option>
+        <option value="q3">Secure?</option>
+      </select>
+      <br /><br />
+      <label for="bio">Bio</label>
+      <br />
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="10"
+        placeholder="bio"
+      ></textarea>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
