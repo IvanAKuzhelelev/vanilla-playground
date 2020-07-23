@@ -12,20 +12,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header><h1>The New Times</h1></header>
-    <main>
-      <article class="article-container">
+    <header><h1 class="main-title">The New Times</h1></header>
+    <main class="base-container">
+      <article class="article-container small-article">
         <h1 class="article-title">Some semantic HTML</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad
           deleniti minus consectetur architecto suscipit distinctio, veritatis
           voluptatem non facilis nam aut vero? Pariatur expedita et libero
-          beatae alias quidem.
+          beatae alias quidem. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Architecto repellat modi quam facilis quaerat
+          aspernatur animi exercitationem ipsum sequi velit suscipit,
+          praesentium totam quae pariatur et sunt expedita deserunt
+          reprehenderit?Non recusandae nemo ipsam ea dolorem molestiae
+          doloremque reprehenderit quaerat et aliquid eos obcaecati autem
+          accusamus, labore aperiam ipsa maxime unde magnam libero soluta
+          aliquam. Minima placeat consequuntur at quis.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad
+          deleniti minus consectetur architecto suscipit distinctio, veritatis
+          voluptatem non facilis nam aut vero? Pariatur expedita et libero
+          beatae alias quidem. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Architecto repellat modi quam facilis quaerat
+          aspernatur animi exercitationem ipsum sequi velit suscipit,
+          praesentium totam quae pariatur et sunt expedita deserunt
+          reprehenderit?Non recusandae nemo ipsam ea dolorem molestiae
+          doloremque reprehenderit quaerat et aliquid eos obcaecati autem
+          accusamus, labore aperiam ipsa maxime unde magnam libero soluta
+          aliquam. Minima placeat consequuntur at quis.
         </p>
       </article>
-      <article class="article-container">
+      <article class="article-container big-article">
         <h1 class="article-title">BREAKING: Puppies Are Adorable</h1>
         <img
+          class="hero-image"
           src="http://placecorgi.com/500/300"
           alt="Corgi placeholder image"
         />
@@ -38,18 +59,21 @@
           deleniti minus consectetur architecto suscipit distinctio, veritatis.
         </p>
       </article>
-      <article class="article-container">
+      <article class="article-container small-article">
         <h1 class="article-title">CSS is useful, apparently</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad
           deleniti minus consectetur architecto suscipit distinctio, veritatis
           voluptatem non facilis nam aut vero? Pariatur expedita et libero
-          beatae alias quidem.
+          beatae alias quidem. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Nobis, illum quisquam illo voluptate autem modi
+          veritatis labore dolorem nemo corrupti, aspernatur aut consectetur
+          ipsum culpa recusandae laboriosam maiores tenetur repellat?
         </p>
       </article>
     </main>
-    <section class="bottom">
-      <article class="article-container">
+    <section class="base-container">
+      <article class="article-container small-article">
         <h1 class="article-title">
           Something about turtles
         </h1>
@@ -66,15 +90,15 @@
           perferendis, doloremque maiores!
         </p>
       </article>
-      <nav>
-        <ul class="navigation">
-          <li class="nav-link">Politcs<a href="#"></a></li>
-          <li class="nav-link">Technology<a href="#"></a></li>
-          <li class="nav-link">Local<a href="#"></a></li>
-          <li class="nav-link">Opinion<a href="#"></a></li>
-          <li class="nav-link">Sports<a href="#"></a></li>
-        </ul>
-      </nav>
+      <ul class="navigation">
+        <li class="link-container"><a class="nav-link" href="#">Politcs</a></li>
+        <li class="link-container">
+          <a class="nav-link" href="#">Technology</a>
+        </li>
+        <li class="link-container"><a class="nav-link" href="#">Local</a></li>
+        <li class="link-container"><a class="nav-link" href="#">Opinion</a></li>
+        <li class="link-container"><a class="nav-link" href="#">Sports</a></li>
+      </ul>
     </section>
   </body>
 </html>
