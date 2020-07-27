@@ -1,7 +1,14 @@
 * {
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
 .main-container {
+  margin-top: 100px;
+  align-self: center;
   background-color: #333333;
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +22,7 @@
   padding-right: 20px;
   display: flex;
   align-items: center;
+  font-family: monospace;
   font-size: 48px;
 }
 .display-content {
@@ -37,22 +45,22 @@
 .main-area-btn:active {
   background-color: #bbbcbd;
 }
-.signs {
+.signs,
+.equal {
   background-color: #df974c;
   color: aliceblue;
 }
-.signs:hover {
+.signs:hover,
+.equal:hover {
   background-color: #f5a753;
 }
-.signs:active {
+.signs:active,
+.equal:active {
   background-color: #ce8434;
 }
 .basic-button {
   width: 24.85%;
 }
-.clear-button {
+.double-button {
   width: 49.9%;
-}
-.zero-button {
-  width: 74.95%;
 }
