@@ -1,15 +1,3 @@
-/*
-* typing into display
-*if inner text ===="0" - override
-*get sign, variable and clear when sign is pushed
-*variables and signs get pushed into one array{
-    i+2 iteration
-    i-1 sign switch
-*round result by 3 digits
-display 
-}
-
- */
 let numSignsArray = [];
 const display = document.querySelector('.display-content');
 console.log(display);
