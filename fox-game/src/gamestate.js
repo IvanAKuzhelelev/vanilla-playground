@@ -1,15 +1,24 @@
 const gameState = {
-  current: "init",
+  current: "INIT",
   clock: 1,
   wakeTime: -1,
   tick() {
     this.clock++;
     console.log(this.clock);
+    if (this.wakeTime === this.clock) {
+      console.log("awoken");
+    }
     return this.clock;
   },
-  changeWeather() {},
-  cleanUpPoop() {},
-  feed() {},
+  changeWeather() {
+    console.log("weather");
+  },
+  cleanUpPoop() {
+    console.log("poop");
+  },
+  feed() {
+    console.log("feed");
+  },
   startGame() {
     console.log("HATCHING");
     this.current = "HATCHING";
