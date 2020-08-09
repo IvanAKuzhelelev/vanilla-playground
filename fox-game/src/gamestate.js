@@ -1,3 +1,6 @@
+import { modFox, modScene } from "./ui";
+import { RAIN_CHANCE, SCENES } from "./constants";
+
 const gameState = {
   current: "INIT",
   clock: 1,
@@ -6,7 +9,7 @@ const gameState = {
     this.clock++;
     console.log(this.clock);
     if (this.wakeTime === this.clock) {
-      console.log("awoken");
+      this.wake();
     }
     return this.clock;
   },
@@ -19,8 +22,15 @@ const gameState = {
   feed() {
     console.log("feed");
   },
+  wake() {
+    this.current = "IDLING";
+    this.wakeTime = -1;
+    this.scene = SCENES[Math.random() > RAIN_CHANCE ? 0 : 1];
+    modScene(this.scene);
+  },
   startGame() {
-    console.log("HATCHING");
+    modFox("egg");
+    modScene("day");
     this.current = "HATCHING";
     this.wakeTime = this.clock + 3;
   },
